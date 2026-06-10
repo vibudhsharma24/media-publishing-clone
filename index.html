@@ -4,6 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dating & Relationship Tips For Women | Matthew Hussey – Demo</title>
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="apple-touch-icon" href="images/favicon.png">
+<!-- Open Graph / Social Share -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Dating & Relationship Tips For Women | Matthew Hussey">
+<meta property="og:description" content="Get personalized dating advice from the world's leading relationship coach. Ask Matthew AI 24/7 and transform your love life.">
+<meta property="og:image" content="images/matthew-hussey-og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="images/matthew-hussey-og.jpg">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -194,44 +204,11 @@
     position: absolute;
     inset: 0;
   }
-  .hero-portrait-placeholder {
+  .hero-portrait-img {
     width: 100%;
     height: 100%;
-    background: linear-gradient(160deg, #1f1a14 0%, #0d0b07 100%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
-  }
-  .portrait-silhouette {
-    width: 260px;
-    height: 360px;
-    background: linear-gradient(180deg, #2a2215 0%, #1a140d 100%);
-    border-radius: 50% 50% 0 0 / 60% 60% 0 0;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 0 80px rgba(184,148,90,.15);
-  }
-  .portrait-silhouette::before {
-    content: '';
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90px;
-    height: 90px;
-    background: #2e2318;
-    border-radius: 50%;
-  }
-  .portrait-gold-glow {
-    position: absolute;
-    bottom: 0; left: 50%;
-    transform: translateX(-50%);
-    width: 300px;
-    height: 300px;
-    background: radial-gradient(ellipse, rgba(184,148,90,.2) 0%, transparent 70%);
-    pointer-events: none;
+    object-fit: cover;
+    object-position: center top;
   }
   .hero-right-label {
     position: absolute;
@@ -243,6 +220,7 @@
     font-size: 13px;
     letter-spacing: 1px;
     white-space: nowrap;
+    z-index: 3;
   }
   .hero-right-label strong { color: var(--gold-light); font-family: var(--serif); font-size: 18px; display: block; margin-bottom: 4px; }
 
@@ -846,13 +824,11 @@
     </div>
   </div>
   <div class="hero-right">
-    <div class="hero-portrait-placeholder">
-      <div class="portrait-silhouette"></div>
-      <div class="portrait-gold-glow"></div>
-    </div>
+    <img src="images/matthew-hussey-og.jpg" alt="Matthew Hussey — #1 Dating & Relationship Coach" class="hero-portrait-img">
+    <div class="hero-portrait"></div>
     <div class="hero-right-label">
       <strong>Matthew Hussey</strong>
-      #1 Dating & Relationship Coach
+      #1 Dating &amp; Relationship Coach
     </div>
   </div>
 </section>
